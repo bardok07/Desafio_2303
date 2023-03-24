@@ -28,6 +28,9 @@ df.filter("id <= 3").select('id' , 'nome').display()
 # DBTITLE 1,Agregação
 df.groupBy('nome').agg(fn.sum('peso').alias('qtd')).display()
 
+# alteração Ju 1,Agregação
+df.groupBy('nome').agg(fn.sum('altura').alias('qtd')).display()
+
 # COMMAND ----------
 
 # DBTITLE 1,Ordenação
