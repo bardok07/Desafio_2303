@@ -59,8 +59,8 @@ df.agg(fn.sum('peso').alias('peso_total')).display()
 # COMMAND ----------
 
 # DBTITLE 1,Pergunta 3
-# retorne os pokemons que não possuem experiência
-df.filter(" experiencia is null").display()
+# retorne os pokemons possuem experiência (Ajuste do Kaique)
+df.filter(" experiencia is not null").display()
 
 # COMMAND ----------
 
